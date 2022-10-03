@@ -52,7 +52,7 @@ function App() {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'AIzaSyB-iKQ7LCZ3YOsWtljX7b_tjOCFbdEUOoU'
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
   })
 
   return isLoaded ? (
